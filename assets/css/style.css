@@ -1,0 +1,259 @@
+ body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .navbar {
+    background-color: #274450;
+  }
+
+  .navbar h1 {
+      padding: 15px;
+  }
+
+  .navbar h1:before {
+    content: 'Note-';
+    color: #ffffff;
+    font-size: 32px;
+  }   
+  .navbar h1:after {
+    content: 'Taker';
+    color: #ed5c14;
+    font-size: 32px;
+  }
+  
+  #create{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    margin-top: 3%;
+  }
+
+  .task-input {
+    width: 60%;
+    height: 20%;
+    color: -internal-light-dark-color(black,white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    background-color: -internal-light-dark-color(white,black);
+    cursor: text;
+    margin: 0;
+    font: 400 13.3333px Arial;
+    padding: 1px 8px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    overflow: visible;
+    width: 100%;
+    border-color: #e7e6e6;
+    border-radius: 15px;
+    line-height: 32px;
+    outline: none;
+  }
+
+  #task-button {
+    width: auto;
+    min-width: 200px;
+    font: 400 13.3333px Arial;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background: #ed5c14;
+    border: 0;
+    opacity: .9;
+    border-radius: 27px;
+    text-decoration: none;
+    transition: ease-in 250ms;
+  }
+
+  #task-button:hover{
+    border: 1px solid black;
+    width: auto;
+    min-width: 200px;
+    font: 400 13.3333px Arial;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background: #fd691f;
+    opacity: .9;
+    border-radius: 27px;
+    text-decoration: none;
+  }
+  
+  #note-list {
+    margin: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-color: #fff;
+    color: #444;
+  }
+  
+  .task {
+    color: -internal-light-dark-color(black,white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    background-color: -internal-light-dark-color(white,black);
+    cursor: text;
+    margin: 0;
+    font: 400 13.3333px Arial;
+    padding: 1px 8px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    overflow: visible;
+    width: 100%;
+    border-color: #e7e6e6;
+    border-radius: 15px;
+    line-height: 32px;
+    outline: none;
+  }
+
+  .note {
+    color: -internal-light-dark-color(black,white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    background-color: rgb(189, 185, 185);
+    cursor: text;
+    margin: 0;
+    font: 400 13.3333px Arial;
+    padding: 1px 8px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    overflow: visible;
+    width: 100%;
+    border-color: #e7e6e6;
+    border-radius: 5px;
+    line-height: 32px;
+    outline: none;
+  }
+
+  li {
+      text-decoration: none;
+      list-style:none;
+  }
+
+  .edit {
+    width: auto;
+    display: inline-block;
+    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 2px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    color: rgb(51, 49, 49);
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background: #b8b6b6;
+    border: 0;
+    opacity: .9;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: ease-in 250ms;
+  }
+
+  .save {
+    width: auto;
+    display: inline-block;
+    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 2px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background: #fd691f;
+    border: 0;
+    opacity: .9;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: ease-in 250ms;
+  }
+
+  .delete {
+    width: auto;
+    display: inline-block;
+    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 2px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background: #ec3211;
+    border: 0;
+    opacity: .9;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: ease-in 250ms;
+  }
+
+  .note-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

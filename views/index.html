@@ -1,0 +1,18 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Note-Taker</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="/js/index.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+      <h1></h1>
+  </nav>
+  <form id="create" action='#' onsubmit="return false">
+      <textarea class="task-input" id="task" placeholder="Enter New Note" name="comments" maxlength="255"></textarea>
+      <input type="submit" value="Add Task" id="task-button" onclick="addTask()">
+  </form>
+  <ul id="note-list"></ul>
+</body>
+</html>
